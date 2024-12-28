@@ -16,4 +16,5 @@ The Route-7 Car Rental website is designed to offer a seamless and user-friendly
 - **CSS**: Custom styles for a modern and responsive design, including Flexbox and Grid layouts.
 - **JavaScript**: Interactive elements and functionalities, such as form validation and dynamic content updates.
 
-## Sample
+## Website Demo
+![route-7](https://github.com/user-attachments/assets/8bf38e7c-cc68-4871-b152-90408e0ea6a5)

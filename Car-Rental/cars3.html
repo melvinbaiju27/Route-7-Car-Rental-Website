@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style3.css">
+  <title>Cars</title>
+</head>
+<body>
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <h1 class="logo">ROUTE 7</h1>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#featured-car" class="navbar-link" data-nav-link>Explore cars</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>About us</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+        </ul>
+      </nav>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const navToggleBtn = document.querySelector('[data-nav-toggle-btn]');
+        const navbarList = document.querySelector('.navbar-list');
+        navToggleBtn.addEventListener('click', function () {
+        navbarList.classList.toggle('active');
+          });
+        });
+      </script>
+      <div class="header-actions">
+
+        <div class="header-contact">
+          <a href="telephone" class="contact-link">91+ 99 88 77 44 55</a>
+
+          <span class="contact-time">Mon - Sat: 9:00 am - 6:00 pm</span>
+        </div>
+
+        <a href="#featured-car" class="btn" aria-labelledby="aria-label-txt">
+          <ion-icon name="car-outline"></ion-icon>
+
+          <span id="aria-label-txt">Explore cars</span>
+        </a>
+
+        <a href="login.html" class="btn user-btn" aria-label="Profile">
+          <ion-icon name="person-outline"></ion-icon>
+        </a>
+
+        <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+<div class="container-1">
+    <div class="image-box">
+        <img src="images/RR.JPG" alt="Porsche GT3 RS" class="rental-image">
+    </div>
+    <div class="car-details">
+        <h1 class="model-name">Rolls-Royce Phantom</h1>
+        <div class="details-section">
+            <h2>Specifications</h2>
+            <ul>
+                <li><strong>Year:</strong> 2020</li>
+                <li><strong>Capacity:</strong> 4 People</li>
+                <li><strong>Fuel Type:</strong> Diesel</li>
+                <li><strong>Mileage:</strong> 5.3 km / 1-litre</li>
+                <li><strong>Transmission:</strong> Automatic</li>
+                <li><strong>Price:</strong> $400 / month</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- New Car Location Section -->
+<div class="container-2">
+    <h2>Location in Chennai</h2>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d391191.2800801984!2d80.2139322!3d13.0930341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin" 
+            width="1400" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+    <div class="location-details">
+        <p><strong>Location:</strong> Chennai, Tamil Nadu, India</p>
+        <p><strong>Estimated Distance:</strong> 47.8 Kms Away</p>
+        <button onclick="window.open('https://www.google.com/maps/dir/?api=1&destination=Chennai,+Tamil+Nadu', '_blank')">Get Directions</button>
+    </div>
+</div>
+
+<div class="container-3">
+    <h2>Additional Information</h2>
+    
+    <div class="details-section-1">
+        <h3>Features</h3>
+        <ul>
+            <li>Spare Tyre</li>
+            <li>Child Seat</li>
+            <li>Pet Friendly</li>
+            <li>Anti-lock Braking System (ABS)</li>
+            <li>Traction Control</li>
+            <li>2 Front Airbags</li>
+            <li>2 Side Airbags</li>
+            <li>2 Rear Airbags</li>
+            <li>Voice Control</li>
+            <li>Music System</li>
+            <li>USB Charger</li>
+            <li>Power Windows</li>
+            <li>Air Freshener</li>
+            <li>Bluetooth</li>
+            <li>6 Airbags</li>
+        </ul>
+    </div>
+
+    <div class="details-section-1">
+        <h3>Benefits</h3>
+        <p>Enjoy a luxurious driving experience with top-notch safety features and modern amenities that ensure comfort and convenience on every journey.</p>
+    </div>
+
+    <div class="details-section-1">
+        <h3>Cancellation Policy</h3>
+        <p>Free cancellation up to 48 hours before the rental period. Please refer to our terms for more details.</p>
+    </div>
+
+    <div class="details-section-1">
+        <h3>FAQs</h3>
+        <p><strong>Q:</strong> Is insurance included?</p>
+        <p><strong>A:</strong> Yes, basic insurance is included in the rental price.</p>
+        <p><strong>Q:</strong> Can I modify my booking?</p>
+        <p><strong>A:</strong> Yes, you can modify your booking up to 24 hours before the rental period.</p>
+    </div>
+
+    <div class="details-section-1">
+        <h3>Agreement</h3>
+        <p>Please read our rental agreement carefully before booking. It contains important information regarding your rental.</p>
+    </div>
+
+    <div class="details-section-1">
+        <h3>Reviews</h3>
+        <p>★★★★★ (4.8/5) - "An exhilarating driving experience!"</p>
+        <p>★★★★☆ (4.5/5) - "Comfortable and safe, highly recommend!"</p>
+    </div>
+</div>
+
+<div class="payment-section">
+    <h2>Payment Information</h2>
+    
+    <form id="payment-form">
+        <div class="form-group">
+            <label for="rental-duration">Rental Duration (days):</label>
+            <input type="number" id="rental-duration" name="rental-duration" min="1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="discount-code">Discount Code (if any):</label>
+            <input type="text" id="discount-code" name="discount-code">
+        </div>
+
+        <div class="form-group">
+            <label for="additional-services">Additional Services:</label>
+            <select id="additional-services" name="additional-services">
+                <option value="0">None</option>
+                <option value="20">Child Seat (+$20)</option>
+                <option value="15">GPS Navigation (+$15)</option>
+                <option value="10">Additional Driver (+$10)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="credit-card">Credit Card</option>
+                <option value="debit-card">Debit Card</option>
+                <option value="paypal">PayPal</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p><strong>Minimum Fare:</strong> $100</p>
+            <p><strong>Tax:</strong> 10%</p>
+            <p><strong>Note:</strong> Petrol cost is not included in the rental price.</p>
+        </div>
+
+        <button type="button" onclick="calculatePrice()">Calculate Final Price</button>
+    </form>
+
+    <div id="final-price" class="final-price" style="display:none;">
+        <h3>Final Price Summary</h3>
+        <p id="price-details"></p>
+        <p><strong>Total Amount: $<span id="total-amount"></span></strong></p>
+    </div>
+<!-- Make Payment Button -->
+<button onclick="window.location.href='payment-page.html'" class="make-payment-button">Make Payment</button>
+</div>
+    <script src="script2.js"></script>
+</body>
+</html>

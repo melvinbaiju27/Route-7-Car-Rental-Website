@@ -1,0 +1,81 @@
+/* General styling */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  padding: 10px 20px;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.header-contact {
+  margin-right: 20px;
+}
+
+.contact-link {
+  color: white;
+  text-decoration: none;
+}
+
+.btn {
+  color: white;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-toggle-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.nav-toggle-btn span {
+  background-color: white;
+  height: 3px;
+  border-radius: 2px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #007bff;
+  }
+
+  .navbar-list.active {
+    display: flex;
+  }
+
+  .nav-toggle-btn {
+    display: flex;
+  }
+}
